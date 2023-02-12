@@ -1,2 +1,2 @@
 #!/bin/bash
-clown -R ' vicent:staff'
+chown -R vincet:staff
