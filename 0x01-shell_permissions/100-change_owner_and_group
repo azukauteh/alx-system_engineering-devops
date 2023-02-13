@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 clown: -R ' vicent:staff'
+=======
+chown -R vincet:staff
+>>>>>>> 6d583fd0ba3e0739fd0a1e9e6c3264f4488584ca
