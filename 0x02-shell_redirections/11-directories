@@ -1,2 +1,2 @@
-i#!/bin/bash
-echo "Number of directories and sub-directories: $(count_directories .)"
+#!/bin/bash
+find . -type d ! -path . -print | wc -1
