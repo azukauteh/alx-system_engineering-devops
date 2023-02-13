@@ -1,0 +1,2 @@
+i#!/bin/bash
+echo "Number of directories and sub-directories: $(count_directories .)"
