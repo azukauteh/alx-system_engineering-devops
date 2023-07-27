@@ -2,7 +2,7 @@
 
 ![Author](https://img.shields.io/badge/Author-AzukaUteh-blue.svg)
 
-Welcome to the 0x04 repository on Loops, Conditions, and Parsing! This repository contains various code examples and exercises related to programming concepts such as loops, conditional statements, and parsing data.
+Welcome to the 0x04 derictory on Loops, Conditions, and Parsing! This directory contains various code examples and exercises related to programming concepts such as loops, conditional statements, and parsing data.
 
 ## Table of Contents
 
