@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# displays lines of current runing PID  process.
+# shellcheck disable=SC2009
+
+
+ps -aux | grep bash
