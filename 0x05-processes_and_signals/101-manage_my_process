@@ -21,7 +21,7 @@ FILE="/var/run/my_process.pid"
 
 create_pid_file()
 {
-    sudo echo $$ > $FILE
+    echo $$ | sudo tee "$FILE" > /dev/null
 }
 
 start_manage_my_process()
