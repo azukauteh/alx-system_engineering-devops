@@ -19,17 +19,20 @@
 
 FILE="/var/run/my_process.pid"
 
-create_pid_file() {
+create_pid_file()
+{
     sudo echo $$ > $FILE
 }
 
-start_manage_my_process() {
+start_manage_my_process()
+{
     create_pid_file
     ./manage_my_process &
     echo "manage_my_process started"
 }
 
-stop_manage_my_process() {
+stop_manage_my_process()
+{
     if [ -e "$FILE" ]; then
         sudo pkill -F "$FILE"
         sudo rm "$FILE"
