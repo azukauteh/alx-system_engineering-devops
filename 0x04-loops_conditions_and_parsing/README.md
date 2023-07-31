@@ -62,4 +62,4 @@ cd 0x04-Loops-Conditions-Parsing
 
 ## Usage
 
-Feel free to use the code examples and exercises in this repository for learning, personal projects, or educational purposes. If you find any bugs or have suggestions for improvements, encourage you to send email (aazure263@gmail.com).
+Feel free to use the code examples and exercises in this repository for learning, personal projects, or educational purposes. If you find any bugs or have suggestions for improvements, contact (aazure263@gmail.com).
