@@ -52,7 +52,7 @@ To get started with this repository, you can follow these steps:
 1. Clone the repository to your local machine using `git`:
 
 ```
-git clone https://github.com/your-username/alx-system_engineering-devops.git
+git clone https://github.com/azukauteh/alx-system_engineering-devops.git
 ```
 
 2. Explore the different directories to access the learning materials, projects, and exercises.
