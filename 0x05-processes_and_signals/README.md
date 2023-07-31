@@ -88,21 +88,24 @@ The `fork()` system call allows the creation of a child process, and then the ch
 
 int main() {
     pid_t pid = fork();
-    if (pid < 0) {
+    if (pid < 0) 
+{
         perror("Fork failed");
         exit(1);
-    } else if (pid == 0) {
+    } else if (pid == 0) 
+{
         // Child process
         execlp("/bin/ls", "ls", "-l", NULL);
         perror("Exec failed");
         exit(1);
-    } else {
+    } else 
+{
         // Parent process
         wait(NULL); // Wait for the child process to complete
         printf("Child process finished.\n");
     }
 
-    return 0;
+    return (0);
 }
 ```
 
@@ -116,29 +119,35 @@ The parent process can use the `wait()` or `waitpid()` system calls to wait for 
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main() {
+int main() 
+{
     pid_t pid = fork();
-    if (pid < 0) {
+    if (pid < 0) 
+{
         perror("Fork failed");
         exit(1);
-    } else if (pid == 0) {
+    } else if (pid == 0) 
+{
         // Child process
         printf("Child process executing...\n");
         sleep(3); // Simulate some work
         printf("Child process finished.\n");
         exit(0);
-    } else {
+    } else 
+{
         // Parent process
         int status;
         wait(&status); // Wait for the child process to terminate
-        if (WIFEXITED(status)) {
+        if (WIFEXITED(status)) 
+{
             printf("Child process exited with status: %d\n", WEXITSTATUS(status));
-        } else {
+        } else 
+{
             printf("Child process did not terminate normally.\n");
         }
     }
 
-    return 0;
+    return (0);
 }
 ```
 
@@ -194,20 +203,23 @@ Signals can be sent to processes using the `kill()` system call. Although the na
 #include <signal.h>
 
 void sigint_handler(int signum) {
+
     printf("Received SIGINT signal. Exiting...\n");
     exit(0);
 }
 
-int main() {
+int main() 
+{
     // Register SIGINT handler
     signal(SIGINT, sigint_handler);
 
     printf("Running. Press Ctrl+C to interrupt.\n");
-    while (1) {
+    while (1) 
+{
         // Do some work
     }
 
-    return 0;
+    return (0);
 }
 ```
 
@@ -239,26 +251,31 @@ In this example, we create a simple program that handles custom signals, SIGUSR1
 
 volatile int counter = 0;
 
-void sigusr1_handler(int signum) {
+void sigusr1_handler(int signum) 
+{
+
     counter++;
     printf("Received SIGUSR1. Counter: %d\n", counter);
 }
 
-void sigusr2_handler(int signum) {
+void sigusr2_handler(int signum) 
+{
     counter--;
     printf("Received SIGUSR2. Counter: %d\n", counter);
 }
 
-int main() {
+int main() 
+{
     signal(SIGUSR1, sigusr1_handler);
     signal(SIGUSR2, sigusr2_handler);
 
     printf("Running. PID: %d\n", getpid());
-    while (1) {
+    while (1) 
+{
         // Keep the program running to handle signals
     }
 
-    return 0;
+    return (0);
 }
 ```
 
