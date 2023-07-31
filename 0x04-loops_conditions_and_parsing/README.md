@@ -2,7 +2,7 @@
 
 ![Author](https://img.shields.io/badge/Author-AzukaUteh-blue.svg)
 
-Welcome to the 0x04 direcctory on Loops, Conditions, and Parsing! This directory contains various code examples and exercises related to python concepts such as loops, conditional statements, and parsing data.
+Welcome to the 0x04 direcctory on Loops, Conditions, and Parsing! This directory contains various code examples and exercises related to this programming concepts such as loops, conditional statements, and parsing data.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Welcome to the 0x04 direcctory on Loops, Conditions, and Parsing! This directory
 
 ## Introduction
 
-Loops, conditions, and parsing are fundamental concepts in programming that help developers control the flow of their code and manipulate data effectively. In this directory, examples and exercisesis provided to demonstrate how to use loops to repeat tasks, employ conditional statements to make decisions, and parse data to extract relevant information.
+Loops, conditions, and parsing are fundamental concepts in programming that help developers control the flow of  code and manipulate data effectively. In this directory, examples and exercisesis provided to demonstrate how to use loops to repeat tasks, employ conditional statements to make decisions, and parse data to extract relevant information.
 
 ## Content
 
