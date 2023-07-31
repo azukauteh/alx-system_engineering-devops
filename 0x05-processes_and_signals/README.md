@@ -50,16 +50,20 @@ Processes can be created using system calls like `fork()` and `exec()` on Unix-l
 #include <stdio.h>
 #include <unistd.h>
 
-int main() {
+int main() 
+{
     pid_t pid = fork();
-    if (pid == 0) {
+    if (pid == 0) 
+{
         printf("This is the child process.\n");
-    } else if (pid > 0) {
+    } else if (pid > 0) 
+{
         printf("This is the parent process. Child PID: %d\n", pid);
-    } else {
+    } else 
+{
         printf("Error occurred during fork().\n");
     }
-    return 0;
+    return (0);
 }
 ```
 
@@ -86,7 +90,8 @@ The `fork()` system call allows the creation of a child process, and then the ch
 #include <stdlib.h>
 #include <unistd.h>
 
-int main() {
+int main() 
+{
     pid_t pid = fork();
     if (pid < 0) 
 {
@@ -202,7 +207,8 @@ Signals can be sent to processes using the `kill()` system call. Although the na
 #include <stdlib.h>
 #include <signal.h>
 
-void sigint_handler(int signum) {
+void sigint_handler(int signum) 
+{
 
     printf("Received SIGINT signal. Exiting...\n");
     exit(0);
