@@ -79,6 +79,4 @@ The directory is organized as follows:
 
 ## Usage
 
-To use the code in this directory, navigate to the specific task directory and follow the instructions provided in the README.md file. Each task may have different requirements and expectations, so make sure to read the instructions carefully.
-
-For example, to work on the "OSI Model" task, you would navigate to the `0-OSI_model` directory and follow the steps mentioned in the README.md file.
+To use the code in this directory, navigate to the specific task directory and follow the instructions provided in the README.md file. Each task may have different requirements and expectations, so make sure to read the instructions carefully..
