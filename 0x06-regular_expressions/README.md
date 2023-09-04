@@ -51,6 +51,3 @@ See real-world examples of regex usage, including email validation, phone number
 
 ## 12. Conclusion
 Summarize the main concepts and benefits of regular expressions.
-
-## 13. Additional Resources
-Provide links to external resources for further learning and advanced regex topics.
