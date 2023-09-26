@@ -1,3 +1,6 @@
+
+![Author](https://img.shields.io/badge/Author-Azuka%20Uteh-blue.svg)
+
 # 0x0B. SSH Configuration and Usage
 
 This direcitory contains information and guidelines on Secure Shell (SSH) configuration and usage. SSH is a cryptographic network protocol that provides a secure way to access and manage remote machines over an insecure network.
