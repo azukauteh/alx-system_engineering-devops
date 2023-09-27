@@ -3,5 +3,5 @@
 apt-get -y install nginx
 service nginx start
 ufw allow 'Nginx HTTP'
-echo"Nginx installed and configured. Access http://localhost/ to see 'Hello World!'"
+echo 'Hello World!' | sudo tee /var/www/html/index.html
 service nginx restart
