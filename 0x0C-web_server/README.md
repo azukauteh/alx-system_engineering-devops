@@ -4,7 +4,7 @@
 
 
 ## Overview
-This repository contains the source code and documentation for a web server application. The web server is designed to handle HTTP requests and serve static files and dynamic content.
+This directory contains the source code and documentation for a web server application. The web server is designed to handle HTTP requests and serve static files and dynamic content.
 
 ## Table of Contents
 1. [Introduction](#introduction)
