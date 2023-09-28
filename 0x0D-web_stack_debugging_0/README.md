@@ -38,6 +38,7 @@ docker pull ubuntu
 Step 3: Run a Docker Container
 Now, to setup a basic ubuntu container with a bash shell, we just run one command. docker run will run a command in a new container, -i attaches stdin and stdout, -t allocates a tty, and we’re using the standard ubuntu container.
 
+
 ```
 docker run -i -t ubuntu /bin/bash
 ```
@@ -47,6 +48,7 @@ To disconnect, or detach, from the shell without exiting use the escape sequence
 
 There are many community containers already available, which can be found through a search. In the command below I am searching for the keyword debian:
 
+```
 docker search debian
-
+```
 
