@@ -1,22 +1,36 @@
 #!/usr/bin/env bash
-# Install nginx and start it
-apt-get -y install nginx
+#installs Nginx with the following configurations:
+#+    Listens on port 80.
+#+    Returns a page containing "Holberton School" when queried
+#+     at the root with a curl GET request.
+# Configures /redirect_me as a "301 Moved Permanently".
+# Includes a custom 404 page containing "Ceci n'est pas une page".
 
-# Firewall setting: Allow Nginx to serve on HTTP
-ufw allow 'Nginx HTTP'
+apt-get update
+apt-get install -y nginx
 
-# Create a new index.html file that will be used over the default index.nginx-debian.html
-echo "Holberton School" >> /var/www/html/index.html
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo " web-01" > /etc/nginx/html/index.html
+touch /etc/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 
-#Give the user  ownership to website files
-chown -R "$USER:$USER" /var/www/html
-chmod -R 755 /var/www
+printf %s "server {
+    listen 80;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
 
-# Redirect to /redirect_me to a youtube video
-sed -i '37i\rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+    location /redirect_me {
+        return 301 http://cuberule.com/;
+    }
 
-# Setup 404 page
-printf "Ceci n'est pas une page\n" >> /var/www/html/error_404.html
-sed -i '38i\error_page 404 /error_404.html;' /etc/nginx/sites-available/default
+    error_page 404 /404.html;
+    location /404 {
+      root /etc/nginx/html;
+      internal;
+    }
+}" > /etc/nginx/sites-available/default
 
-service nginx start
+service nginx restart
+
