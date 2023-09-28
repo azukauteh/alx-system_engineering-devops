@@ -1,7 +1,7 @@
-etup nginx server
+#setup nginx server
 
 package { 'nginx':
-  ensure     => 'installed',
+  ensure => 'installed',
 }
 
 file { '/var/www/html/index.html':
@@ -19,3 +19,4 @@ service { 'nginx':
   ensure  => running,
   require => Package['nginx'],
 }
+
