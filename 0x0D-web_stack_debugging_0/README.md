@@ -1,4 +1,5 @@
-https://github.com/azukauteh/AirBnB_clone_v2/pull/new/test1
+![Author](https://img.shields.io/badge/Author-Azuka%20Uteh-blue.svg)
+
 
 #webtack debugging #0
 
@@ -13,15 +14,18 @@ Web stack debugging involves identifying and fixing issues in web applications o
 apt-get update
 ```
 Let’s install Docker by installing the docker-io package:
+
 ``bash
 apt-get -y install docker.io
 ```
 Link and fix paths with the following two commands:
+
 ```
 ln -sf /usr/bin/docker.io /usr/local/bin/docker
 sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 ```
 Finally, and optionally, let’s configure Docker to start when the server boots:
+
 ```
 update-rc.d docker.io defaults
 ```
