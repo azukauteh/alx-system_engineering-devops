@@ -22,11 +22,11 @@ The web server is a software application that listens for incoming HTTP requests
 To install and run the web server, follow these steps:
 
 1. Clone this repository to your local machine:
-   ```bash
+```
   git clone https://github.com/azukauteh/alx-system_engineering-devops.git
    
   cd 0x0C-web-server
-   ```
+```
 
 2. Compile the source code using the provided build tools or commands.
 
@@ -50,15 +50,13 @@ The web server can be configured using a configuration file or command-line opti
 - Security settings.
 
 ## Features
-
-- **HTTP Server : Listens for incoming HTTP requests and handles them accordingly.
-- **Static File Serving : Serves static files such as HTML, CSS, JavaScript, images, etc.
+- HTTP Server : Listens for incoming HTTP requests and handles them accordingly.
+- Static File Serving : Serves static files such as HTML, CSS, JavaScript, images, etc.
 - Dynamic Content Generation : Supports server-side programming for generating dynamic content.
 - Logging : Provides logging functionality to track server events and requests.
 - Error Handling : Properly handles HTTP errors and displays appropriate error pages.
 
 ## Requirements
-
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted on Ubuntu 16.04 LTS
 - All your files should end with a new line
