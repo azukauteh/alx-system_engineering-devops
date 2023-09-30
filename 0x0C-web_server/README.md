@@ -22,13 +22,14 @@ The web server is a software application that listens for incoming HTTP requests
 To install and run the web server, follow these steps:
 
 1. Clone this repository to your local machine:
-  git clone https://github.com/azukauteh/alx-system_engineering-devops.git
+```
+git clone https://github.com/azukauteh/alx-system_engineering-devops.git
   cd 0x0C-web-server
+```
 
+3. Compile the source code using the provided build tools or commands.
 
-2. Compile the source code using the provided build tools or commands.
-
-3. Run the compiled executable to start the web server.
+4. Run the compiled executable to start the web server.
 
 ## Usage
 
