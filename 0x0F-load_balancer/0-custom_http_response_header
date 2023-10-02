@@ -1,18 +1,9 @@
 #!/usr/bin/env bash
 # Configures a new Ubuntu server with a custom HTTP header response
-
-# Update package list and install Nginx
 apt-get -y update
 apt-get -y install nginx
 
-# Allow Nginx through the firewall
 ufw allow 'Nginx HTTP'
-
-# Create a custom HTML page
 echo 'Hello world' > /var/www/html/index.nginx-debian.html
-
-# Configure Nginx to include custom header X-Served-By
-sed -i "/listen 80 default_server;/a add_header X-Served-By \$226177-web-01;" /etc/nginx/sites-available/default
-
-# Restart Nginx to apply the changes
+sed -i "/listen 80 226177-web-01;/a add_header X-Served-By \$226177-web-01;" /etc/nginx/sites-available/default
 service nginx restart
