@@ -3,7 +3,15 @@
 apt-get -y update
 apt-get -y install nginx
 
+# Allow Nginx through the firewall
 ufw allow 'Nginx HTTP'
+
+# Create a custom HTML page
 echo 'Hello world' > /var/www/html/index.nginx-debian.html
-sed -i "/listen 80 226177-web-01;/a add_header X-Served-By \$226177-web-01;" /etc/nginx/sites-available/default
+
+# Configure Nginx to include custom header X-Served-By for web-01
+sed -i "/listen 80;/a \        add_header X-Served-By 226177-web-01;" /etc/nginx/sites-available/default
+
+# Restart Nginx to apply the changes
 service nginx restart
+
