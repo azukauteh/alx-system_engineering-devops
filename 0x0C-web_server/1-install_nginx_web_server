@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Install nginx on web server; Nginx should be listening on port 80
+# Install nginx on web-01 Nginx should be listening on port 80
 
-ssh ubuntu@100.25.145.62 web-01 'sudo apt-get update'
-ssh ubuntu@100.25.145.62 web-01 'sudo apt-get -y install nginx'
-ssh ubuntu@100.25.145.62 web-01 'sudo ufw allow "Nginx HTTP"'
-ssh ubuntu@100.25.145.62 web-01 'echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html'
-ssh ubuntu@100.25.145.62 web-01 'sudo service nginx restart'
+ssh -i /root/.ssh/school ubuntu@100.25.145.62 'sudo apt-get update'
+ssh -i /root/.ssh/school ubuntu@100.25.145.62 'sudo apt-get -y install nginx'
+ssh -i /root/.ssh/school ubuntu@100.25.145.62 'sudo ufw allow "Nginx HTTP"'
+ssh -i /root/.ssh/school ubuntu@100.25.145.62 'echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html'
+ssh -i /root/.ssh/school ubuntu@100.25.145.62 'sudo service nginx restart'
