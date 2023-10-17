@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Start the SSH agent and add the SSH key
+eval $(ssh-agent)
+ssh-add /root/.ssh/school
+
+# Connect to the remote server and execute commands
+ssh ubuntu@35.168.2.216 << EOF
+  # Commands to be executed on the remote server
+  echo "Hello, remote server!"
+  # Welcome to web-01
+EOF
+
