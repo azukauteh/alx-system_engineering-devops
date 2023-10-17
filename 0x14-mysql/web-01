@@ -4,9 +4,5 @@ eval $(ssh-agent)
 ssh-add /root/.ssh/school
 
 # Connect to the remote server and execute commands
-ssh ubuntu@35.168.2.216 << EOF
-  # Commands to be executed on the remote server
-  echo "Hello, remote server!"
-  # Welcome to web-01
-EOF
+ssh ubuntu@54.174.133.225
 
