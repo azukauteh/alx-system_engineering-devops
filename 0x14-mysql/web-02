@@ -2,5 +2,6 @@
 # Start the SSH agent and add the SSH key
 eval $(ssh-agent)
 ssh-add /root/.ssh/school
+
 # Connect to the remote server and execute commands
 ssh ubuntu@54.237.102.15
