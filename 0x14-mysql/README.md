@@ -1,6 +1,5 @@
 ![Author](https://img.shields.io/badge/Author-Azuka%20Uteh-blue.svg)
 
-
 # 0x14. MySQL
 
 This directory contains resources and information related to MySQL, a popular open-source relational database management system (RDBMS). MySQL is widely used for various applications, from small-scale web applications to large-scale enterprise systems.
