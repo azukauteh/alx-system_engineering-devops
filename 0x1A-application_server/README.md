@@ -11,45 +11,33 @@ This directory contains the implementation of an Application Server as part of A
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
+- [Features](#)(#Features)
 
 
 ## Installation
 
 To install the Application Server, follow these steps:
 
-1. Clone the repository:
+1. loging into server:
 
    ```bash
-   git clone https://github.com/azukauteh/0x1A-application_server.git
+   ./web-01
    ```
 
-2. Navigate to the project directory:
+2. Create virtual Enviromment:
 
    ```bash
-   cd 0x1A-application_server
+   sudo apt install python3-venv
+   python3 -m venv 
    ```
 
-3. Install dependencies:
+
+3. Install flask:
 
    ```bash
-   sudo apt install -y net-tools
+   pip install flask
    ```
 
-## Usage
-
-To run the Application Server, execute the following command:
-
-```bash
- ssh -i /root/.ssh/school ubuntu@ip
-```
-
-This command will start the server, and it will be ready to handle incoming requests.
-
-## Configuration
-
-The Application Server can be configured using the `config.py` file. Adjust the settings according to your requirements, such as specifying the port, database connection details, or any other relevant configurations.
 
 ## Features
 
